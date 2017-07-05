@@ -1,0 +1,21 @@
+#Error: 
+#Rebuild the library with Windows, GTK+ 2.x or Carbon support. If you are on Ubuntu or Debian, 
+#install libgtk2.0-dev and pkg-config, then re-run cmake or configure script in function cvShowImage
+
+#Solution:
+# Should work in any linux conda install
+conda install -n <env_name> -c loopbio -c conda-forge -c pkgw-forge ffmpeg-feature ffmpeg gtk2 opencv
+
+#Reference:
+#https://github.com/conda-forge/opencv-feedstock/issues/43
+
+
+##Error: Issue with libopenblas.so.0
+
+#Solution:
+#1. sudo apt-get install libopenblas-base
+#2. export LD_LIBRARY_PATH=/usr/lib/openblas-base/
+#3. export LD_LIBRARY_PATH=/opt/OpenBLAS/lib/
+
+#Reference:
+#https://github.com/sermanet/OverFeat/issues/10
