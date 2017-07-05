@@ -1,2 +1,2 @@
-# algebra_canny_edge
-Final Project for Canny Edge Detection
+# Canny Edge Detection Project
+Final Project for Linear Algebra URL 2017
